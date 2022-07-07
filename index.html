@@ -1,22 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Whale Watchers</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="style.css">
     </head>
+   
     <body>
-        <section>
-            <h1>Stock News</h1>
-            <p id="stockNews"></p>
-        </section>
-
-        <section>
-            <h1>Crypto News</h1>
-            <p id="cryptoNews"></p>
-        </section>
-
-        <script src="./assets/script.js"></script>
-    </body>
+     <header>
+        <nav class="flex items-center justify-between flex-wrap  p-6" >
+            <ul >
+            <li  a href="#"class ="text-2xl"><button onclick="myFunction()">:crescent_moon:</button></li>
+            </ul>
+            <h1 class ="text-3xl">Whale Watchers</h1>
+            <ul>
+            <li class="text-2xl"> <input type="text" placeholder="Search:mag:.." id="myInput" ></li>
+            </ul>
+        </nav>
+    </header>
+        <main>
+            <div class="lol grid grid-flow-col auto-cols-max flex">
+                <section class=" box-border h-12 w-40 border-4 ">
+                News Stock
+                </section>
+                <article class ="box-border h-32 w-32  border-4">Content for news</article>
+                <section class="box-border h-60 w-60    border-4">Graph Image</section>
+                <section class ="px-4 box-border h-12 w-40 border-4">
+                Stocks
+                </section>
+                <article class ="box-border h-32 w-32 p-4 border-4">Content for stock data</article>
+            </div>
+        </main>
+        <footer class ="text-center"> :copyright: Whale Watchers</footer>
+        <script src="index.js"></script>
+         <script src="./assets/script.js"></script>
+  </body>
 </html>
