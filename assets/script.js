@@ -17,5 +17,5 @@ fetch("https://finnhub.io/api/v1/add?token=cb3evlaad3i8tak0u1ug")
     })
     .then((data) => {
         console.log(data);
-        document.getElementById("cryptoNews");
+        document.getElementById("stockData");
     });

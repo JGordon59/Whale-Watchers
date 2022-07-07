@@ -1,41 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Whale Watchers</title>
         <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="stylesheet" href="style.css">
-    </head> 
+        <link rel="stylesheet" href="./assets/style.css" />
+    </head>
     <body>
-     <header>
-        <nav class="flex items-center justify-between flex-wrap  p-6" >
-            <ul >
-            <li  a href="#"class ="text-2xl"><button onclick="myFunction()">:crescent_moon:</button></li>
-            </ul>
-            <h1 class ="text-3xl">Whale Watchers</h1>
-            <ul>
-            <li class="text-2xl"> <input type="text" placeholder="Search:mag:.." id="myInput" ></li>
-            </ul>
-        </nav>
-    </header>
+        <header>
+            <nav class="flex items-center justify-between flex-wrap p-6">
+                <ul>
+                    <li a href="#" class="text-2xl">
+                        <button onclick="myFunction()">:crescent_moon:</button>
+                    </li>
+                </ul>
+                <h1 class="text-3xl">Whale Watchers</h1>
+                <ul>
+                    <li class="text-2xl">
+                        <input
+                            type="text"
+                            placeholder="Search:mag:.."
+                            id="myInput"
+                        />
+                    </li>
+                </ul>
+            </nav>
+        </header>
         <main>
             <div class="lol grid grid-flow-col auto-cols-max flex">
-                <section class=" box-border h-12 w-40 border-4 ">
-                News Stock
+                <section class="box-border h-12 w-40 border-4">
+                    <h1>Stock News</h1>
+                    <p id="stockNews"></p>
                 </section>
-                <article class ="box-border h-32 w-32  border-4">Content for news</article>
-                <section class="box-border h-60 w-60    border-4">Graph Image</section>
-                <section class ="px-4 box-border h-12 w-40 border-4">
-                Stocks
+                <article class="box-border h-32 w-32 border-4">
+                    <h1>Content for news</h1>
+                </article>
+                <section class="box-border h-60 w-60 border-4">
+                    Graph Image
                 </section>
-                <article class ="box-border h-32 w-32 p-4 border-4">Content for stock data</article>
+                <section class="px-4 box-border h-12 w-40 border-4">
+                    <h2>Stocks</h2>
+                </section>
+                <section>
+                    <article class="box-border h-32 w-32 p-4 border-4">
+                        <h2>Content for stock data</h2>
+                        <p id="stockData"></p>
+                    </article>
+                </section>
             </div>
         </main>
 
-        <footer class ="text-center"> :copyright: Whale Watchers</footer>
+        <footer class="text-center">:copyright: Whale Watchers</footer>
         <script src="index.js"></script>
-         <script src="./assets/script.js"></script>
-  </body>
+        <script src="./assets/script.js"></script>
+    </body>
 </html>
