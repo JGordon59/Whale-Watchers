@@ -1,6 +1,25 @@
 
 header {
 border-bottom: 10px solid black;
+background-color: rgb(2, 209, 209);
+padding-bottom: 50px;
+
+}
+
+nav h1 {
+    position: relative;
+    left: 500px;
+}
+
+nav p {
+    position: relative;
+    right: 150px;
+    top: 50px;
+    
+}
+
+nav li {
+    margin-top: 20px;
 }
 
 .dark-mode  {
