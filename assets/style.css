@@ -1,0 +1,17 @@
+
+header {
+border-bottom: 10px solid black;
+}
+
+.dark-mode  {
+    background-color: black;
+    color: white;
+    
+} 
+
+.text-2xl :hover{
+text-shadow: black;
+}
+.lol {
+    padding-top: 50px;
+}
