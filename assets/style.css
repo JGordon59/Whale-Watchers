@@ -106,3 +106,19 @@ text-shadow: black;
 #myInput {
     color:blue;
 }
+
+footer {
+  border-top: black 5px solid;
+  padding-top: 20px;
+  background-color: rgb(2, 209, 209);
+}
+.foot {
+  display:flex;
+  justify-content: center;
+  text-decoration: none;
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
+.foot :hover {
+  color: white;
+}
