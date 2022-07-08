@@ -4,11 +4,10 @@ function myFunction() {
 
 
 function whaleBtn() {
-   var x = document.getElementById('funFact');
-   if (x.style.visibility === 'hidden') {
-     x.style.visibility = 'visible';
+   const funFactEl = document.getElementById('funFact');
+   if (funFactEl.style.visibility === 'hidden') {
+     funFactEl.style.visibility = 'visible';
    } else {
-     x.style.visibility = 'hidden';
+     funFactEl.style.visibility = 'hidden';
    }
  }
-
