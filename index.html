@@ -10,12 +10,28 @@
     </head> 
     <body>
      <header>
-        <nav class="flex items-center justify-between flex-wrap  p-6" >
+        <nav class="flex items-center justify-between flex-wrap  p-7" >
             <ul >
             <li  a href="#"class ="text-2xl"><button onclick="myFunction()">🌙</button></li>
             </ul>
-            <h1 class ="text-3xl">Whale Watchers 🐳</h1>
-            <p>A “Whale” is when you are holding an obnoxious/majority of the share/stake in a crypto or stock</p>
+            <div class="waviy">
+                <span style="--i:1">W</span>
+                <span style="--i:2">H</span>
+                <span style="--i:3">A</span>
+                <span style="--i:4">L</span>
+                <span style="--i:5">E</span>
+                <button onclick="whaleBtn()">🐳</button>
+                <span style="--i:7">W</span>
+                <span style="--i:8">A</span>
+                <span style="--i:9">T</span>
+                <span style="--i:10">C</span>
+                <span style="--i:11">H</span>
+                <span style="--i:12">E</span>
+                <span style="--i:13">R</span>
+                <span style="--i:14">S</span>
+             
+               </div>
+            <p id="funFact" class="animate-charcter">FUN FACT: In the stock Market, the term “Whale” is when someone is holding an obnoxious/majority of the share/stake in a crypto or stock</p>
             <ul>
             <form id="search-form">
             <li class="text-1xl search"> <input id ="myInput" type="search" name="s" placeholder="Search..🔎" class="round">
@@ -26,16 +42,26 @@
         </nav>
     </header>
         <main>
-            <div class="lol grid grid-flow-col auto-cols-max flex">
-                <section class=" box-border h-12 w-40 border-4 ">
-                News Stock
-                </section>
-                <article class ="box-border h-32 w-32  border-4">Content for news</article>
-                <section class="box-border h-60 w-60    border-4">Graph Image</section>
-                <section class ="px-4 box-border h-12 w-40 border-4">
-                Stocks
-                </section>
-                <article class ="box-border h-32 w-32 p-4 border-4">Content for stock data</article>
+            <div align="center">
+                <main>
+                    <div>
+                        <section class="box-border h-16 w-80 border-4 text-center">
+                        News Content
+                        </section>
+                    </div>
+                       <br>
+                    <hr class="h-2 border-4" >
+                        <br>
+                    <div>
+                        <section class="box-border h-8 w-80 border-4 text-center">
+                            Stock Name graph
+                        </section>
+                    </div>
+                        <br>
+                    <div>
+                        <img class="box-border h-60 w-85 border-4" src=" " alt="Stock Graph" width="500" height="600">
+                    </div>
+                </main>
             </div>
         </main>
 
