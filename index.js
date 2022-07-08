@@ -1,7 +1,6 @@
 function myFunction() {
    var element = document.body;
    element.classList.toggle("dark-mode");
-}
 
 function whaleBtn() {
    var x = document.getElementById('funFact');
@@ -11,3 +10,4 @@ function whaleBtn() {
      x.style.visibility = 'hidden';
    }
  }
+
