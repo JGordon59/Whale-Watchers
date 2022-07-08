@@ -1,3 +1,14 @@
+const key = 'cb3evlaad3i8tak0u1ug';
+const ticker = 'AAPL'
+const stockNameEl = document.querySelector(".stockName")
+const currentPriceEl = document.querySelector(".currentPrice")
+const changeEl = document.querySelector(".change")
+const percentChangeEl = document.querySelector(".percentChange")
+const dailyHighEl= document.querySelector(".dailyHigh")
+const dailyLowEl= document.querySelector(".dailyLow")
+const openPriceEl= document.querySelector(".openPrice")
+const closedPriceEl= document.querySelector(".closedPrice")
+
 fetch(
     "https://content.guardianapis.com/search?q=Stocks&api-key=88698a0f-0636-4f4c-8bc0-f3820ad600f5"
 )
@@ -10,12 +21,7 @@ fetch(
         document.getElementById("stockNews");
     });
 
-fetch("https://finnhub.io/api/v1/add?token=cb3evlaad3i8tak0u1ug")
-    .then((response) => {
-        console.log(response);
-        return response.json();
-    })
-    .then((data) => {
-        console.log(data);
-        document.getElementById("cryptoNews");
-    });
+fetch(`https://finnhub.io/api/v1/quote?symbol=${ticker}&token=${key}`)
+	.then(response => response.json())
+	.then(response => console.log(response))
+	.catch(err => console.error(err));
