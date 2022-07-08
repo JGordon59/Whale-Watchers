@@ -1,68 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Whale Watchers</title>
         <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="stylesheet" href="assets/style.css">
-    </head> 
+        <link rel="stylesheet" href="assets/style.css" />
+    </head>
     <body>
-     <header>
-        <nav class="flex items-center justify-between flex-wrap  p-7" >
-            <ul >
-            <li  a href="#"class ="text-2xl"><button onclick="myFunction()">🌙</button></li>
-            </ul>
-            <div class="waviy">
-                <span style="--i:1">W</span>
-                <span style="--i:2">H</span>
-                <span style="--i:3">A</span>
-                <span style="--i:4">L</span>
-                <span style="--i:5">E</span>
-                <span style="--i:6">🐳</span>
-                <span style="--i:7">W</span>
-                <span style="--i:8">A</span>
-                <span style="--i:9">T</span>
-                <span style="--i:10">C</span>
-                <span style="--i:11">H</span>
-                <span style="--i:12">E</span>
-                <span style="--i:13">R</span>
-                <span style="--i:14">S</span>
-             
-               </div>
-            <p class="animate-charcter">FUN FACT: In the stock Market, a “Whale” is when you are holding an obnoxious/majority of the share/stake in a crypto or stock</p>
-            <ul>
-            <li class="text-2xl"> <input type="text" placeholder="Search🔍" id="myInput" ></li>
-            </ul>
-        </nav>
-    </header>
+        <header>
+            <nav class="flex items-center justify-between flex-wrap p-7">
+                <ul>
+                    <li a href="#" class="text-2xl">
+                        <button onclick="myFunction()">🌙</button>
+                    </li>
+                </ul>
+                <div class="waviy">
+                    <span style="--i: 1">W</span>
+                    <span style="--i: 2">H</span>
+                    <span style="--i: 3">A</span>
+                    <span style="--i: 4">L</span>
+                    <span style="--i: 5">E</span>
+                    <span style="--i: 6">🐳</span>
+                    <span style="--i: 7">W</span>
+                    <span style="--i: 8">A</span>
+                    <span style="--i: 9">T</span>
+                    <span style="--i: 10">C</span>
+                    <span style="--i: 11">H</span>
+                    <span style="--i: 12">E</span>
+                    <span style="--i: 13">R</span>
+                    <span style="--i: 14">S</span>
+                </div>
+                <p class="animate-charcter">
+                    FUN FACT: In the stock Market, a “Whale” is when you are
+                    holding an obnoxious/majority of the share/stake in a crypto
+                    or stock
+                </p>
+                <ul>
+                    <li class="text-2xl">
+                        <input
+                            type="text"
+                            placeholder="Search🔍"
+                            id="myInput"
+                        />
+                    </li>
+                </ul>
+            </nav>
+        </header>
         <main>
             <div align="center">
                 <main>
                     <div>
-                        <section class="box-border h-16 w-80 border-4 text-center">
-                        News Content
+                        <section
+                            class="box-border h-16 w-80 border-4 text-center"
+                        >
+                            News Content
                         </section>
                     </div>
-                       <br>
-                    <hr class="h-2 border-4" >
-                        <br>
+                    <br />
+                    <hr class="h-2 border-4" />
+                    <br />
                     <div>
-                        <section class="box-border h-8 w-80 border-4 text-center">
-                            Stock Name graph
+                        <section
+                            class=""
+                            > 
+                            <div class="box-content h-50 w-32 p-4 border-4 ">
+                                <h2> <span class="stockName"> Stock Name </span> </h2>
+                            <p class="currentPrice">Current Price: </p>
+                            <p class="change">Change: </p>
+                            <p class="percentChange"> Changed %: </p>
+                            <p class="dailyHigh"> Daily High: </p>
+                            <p class="dailyLow"> Daily Low: </p>
+                            <p class="openPrice">Open Price: </p>
+                            <p class="closedPrice">  Closed Price:</p>
+                        </div>
                         </section>
                     </div>
-                        <br>
+                    <br />
                     <div>
-                        <img class="box-border h-60 w-85 border-4" src=" " alt="Stock Graph" width="500" height="600">
+                        <img
+                            class="box-border h-60 w-85 border-4"
+                            src=" "
+                            alt="Stock Graph"
+                            width="500"
+                            height="600"
+                        />
                     </div>
                 </main>
             </div>
         </main>
 
-        <footer class ="text-center"> :copyright: Whale Watchers</footer>
+        <footer class="text-center">:copyright: Whale Watchers</footer>
         <script src="index.js"></script>
-         <script src="./assets/script.js"></script>
-  </body>
+        <script src="./assets/script.js"></script>
+    </body>
 </html>
