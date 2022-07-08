@@ -7,8 +7,10 @@ padding-bottom: 50px;
 
 .waviy {
     position: relative;
+    left: 500px;
     -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
     font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
 .waviy span {
@@ -22,11 +24,21 @@ padding-bottom: 50px;
     
   }
 
+  @keyframes waviy {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-20px)
+    }
+  }
+
 nav p {
     position: relative;
     right: 150px;
     top: 50px;
     font-weight: bold;
+    
 }
 
 .animate-charcter
@@ -34,10 +46,10 @@ nav p {
    text-transform: uppercase;
   background-image: linear-gradient(
     -225deg,
-    #231557 0%,
+    #140b34 0%,
     #44107a 29%,
-    #ff1361 67%,
-    #fff800 100%
+    #13fffbda 67%,
+    #0731ea 100%
   );
   background-size: auto auto;
   background-clip: border-box;
