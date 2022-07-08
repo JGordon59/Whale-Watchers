@@ -1,4 +1,4 @@
-
+ 
 header {
 border-bottom: 10px solid black;
 background-color: rgb(2, 209, 209);
@@ -74,10 +74,12 @@ nav li {
 }
 
 .dark-mode  {
-    background-color: black;
-    color: white;
+    background-color: rgb(1, 12, 15);
+    color: #3d82e1;
     
 } 
+
+
 
 .text-2xl :hover{
 text-shadow: black;
