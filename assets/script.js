@@ -40,8 +40,13 @@ function stockData(ticker) {
         .then((response) => response.json())
         .then((data) => {
             console.log(data);
-            //  maddox-Do the same code below for all objects ex( change daily high daily low etc...)
             currentPriceEl.innerText = `Current Price: $${data.c}`;
+            changeEl.innerText = `Change: ${data.d}`;
+            percentChangeEl.innerText = `Percent Change: ${data.dp}%`;
+            dailyHighEl.innerText = `Daily High: $${data.h}`;
+            dailyLowEl.innerText = `Daily Low: $${data.l}`;
+            openPriceEl.innerText = `Open Price: $${data.o}`;
+            closedPriceEl.innerText = `Closed Price: $${data.pc}`;
         })
         .catch((err) => console.error(err));
 }
