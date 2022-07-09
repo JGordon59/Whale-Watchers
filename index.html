@@ -6,10 +6,24 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Whale Watchers</title>
         <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+    content: ["./**/*.{html,js}"],
+    theme: {
+        extend: {
+            colors:{
+                "primary": "rgb(2, 209, 209)"
+            }
+        },
+    },
+    plugins: [],
+};
+        </script>
         <link rel="stylesheet" href="assets/style.css" />
     </head>
+    
     <body>
-     <header>
+    <header>
         <nav class="flex items-center justify-between flex-wrap  p-7" >
             <ul >
             <li  a href="#"class ="text-2xl"><button onclick="myFunction()">🌙</button></li>
@@ -29,12 +43,12 @@
                 <span style="--i:12">E</span>
                 <span style="--i:13">R</span>
                 <span style="--i:14">S</span>
-               </div>
+            </div>
             <p id="funFact" class="animate-charcter">FUN FACT: In the stock Market, the term “Whale” is when someone is holding an obnoxious/majority of the share/stake in a crypto or stock</p>
             <ul>
             <form id="search-form">
             <li class="text-1xl search"> <input id ="myInput" type="search" name="s" placeholder="Search..🔎" class="round">
-            <button id="submit" onclick="javascript:alert('YOOO!')"></button>
+            <button id="submit" data-selector="searchBtn"></button>
             </li>
             <form>
             </ul>
@@ -42,12 +56,11 @@
     </header>
         <main>
             <div align="center">
-                    <div>
-                        <section class="box-border h-16 w-80 border-4 text-center">
-                            <h1> Stock News</h1>
-                            <p class="stockNews"> </p>
-                        </section>
+                <section class=" w-1/2 border-4 text-center">
+                    <h1 class="text-2xl mb-4"> Stock News</h1>
+                    <div class="stockNews flex flex-col gap-6">
                     </div>
+                        </section>
                     <br />
                     <hr class="h-2 border-4" />
                     <br />
@@ -72,7 +85,7 @@
                         width="500" 
                         height="600">
                         <section>
-                            <div class ="box-content h-50 w-32 p-4 border-4">
+                            <div class =" h-50 w-64 p-4 border-4">
                             <h2 class="stockData"> Stock Data </h2> 
                             <p class="currentPrice">Current Price: </p>
                             <p class="change">Change: </p>
@@ -94,7 +107,8 @@
             <ul><a href="webull.com">Webull</a></ul>
             </div>
             ©️ Whale Watchers </footer>
+
         <script src="index.js"></script>
-         <script src="./assets/script.js"></script>
-  </body>
+        <script src="./assets/script.js"></script>
+</body>
 </html>
