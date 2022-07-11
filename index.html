@@ -5,28 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Whale Watchers</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script>
-            tailwind.config = {
-    content: ["./**/*.{html,js}"],
-    theme: {
-        extend: {
-            colors:{
-                "primary": "rgb(2, 209, 209)"
-            }
-        },
-    },
-    plugins: [],
-};
-        </script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
         <link rel="stylesheet" href="assets/style.css" />
     </head>
     
     <body>
-    <header>
+    <header class="columns">
         <nav class="flex items-center justify-between flex-wrap  p-7" >
             <ul >
-            <li  a href="#"class ="text-2xl"><button onclick="myFunction()">🌙</button></li>
+            <li><button class="button is-large is-ghost" onclick="myFunction()">🌙</button></li>
             </ul>
             <div class="waviy">
                 <span style="--i:1">W</span>
@@ -47,7 +34,7 @@
             <p id="funFact" class="animate-charcter">FUN FACT: In the stock Market, the term “Whale” is when a individual or company is holding an obnoxious majority of the shares in a crypto or stock</p>
             <ul>
             <form id="search-form">
-            <li class="text-1xl search"> <input id ="myInput" type="search" name="s" placeholder="Stock Ticker🔎" class="round">
+            <li class="text-1xl search"> <input id="myInput" type="search" name="s" placeholder="Stock Ticker🔎" class="round">
             <button id="submit" data-selector="searchBtn"></button>
             </li>
             <form>
@@ -68,7 +55,7 @@
                         <section
                             class=""
                             > 
-                            <div class="box-border h-8 w-80 border-4 text-center ">
+                            <div class="box-border h-8 w-80 border-4 text-center">
                                 <h2> <span class="stockName"> Stock Name </span> </h2>
                             
                         </div>
