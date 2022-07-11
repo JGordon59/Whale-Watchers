@@ -14,7 +14,7 @@ const myInputEl = document.querySelector("#myInput");
 
 async function getStockNews(e) {
     e.preventDefault();
-    const newsName = myInputEl.value;
+    const newsName = myInputEl.value.toUpperCase();
     console.log(newsName);
     stockNewsEl.innerHTML = "";
     const url = `https://content.guardianapis.com/search?q=${newsName}&api-key=${guardApiKey}`;
@@ -30,7 +30,6 @@ async function getStockNews(e) {
         newPTag.innerText = article.webTitle;
         newATag.appendChild(newPTag);
         stockNewsEl.appendChild(newATag);
-    
     });
     stockData(newsName);
 }
@@ -41,7 +40,7 @@ function stockData(ticker) {
         .then((response) => response.json())
         .then((data) => {
             console.log(data);
-            stockNameEl.innerText = ticker
+            stockNameEl.innerText = ticker;
             currentPriceEl.innerText = `Current Price: $${data.c}`;
             changeEl.innerText = `Change: ${data.d}`;
             percentChangeEl.innerText = `Percent Change: ${data.dp}%`;
