@@ -41,6 +41,7 @@ function stockData(ticker) {
         .then((response) => response.json())
         .then((data) => {
             console.log(data);
+            stockNameEl.innerText = ticker
             currentPriceEl.innerText = `Current Price: $${data.c}`;
             changeEl.innerText = `Change: ${data.d}`;
             percentChangeEl.innerText = `Percent Change: ${data.dp}%`;
@@ -50,12 +51,6 @@ function stockData(ticker) {
             closedPriceEl.innerText = `Closed Price: $${data.pc}`;
         })
         .catch((err) => console.error(err));
-        stockName(ticker);
 }
 
-function stockName(){
-    if (myInputEl === ticker){
-        stockNameEl.innerText = ""
-    }
-}
 searchBtnEl.addEventListener("click", getStockNews);
