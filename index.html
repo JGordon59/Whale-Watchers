@@ -10,8 +10,8 @@
     </head>
     
     <body>
-    <header class="columns">
-        <nav class="flex items-center justify-between flex-wrap  p-7" >
+    <header>
+        <nav class="">
             <ul >
             <li><button class="button is-large is-ghost" onclick="myFunction()">🌙</button></li>
             </ul>
@@ -33,11 +33,11 @@
             </div>
             <p id="funFact" class="animate-charcter">FUN FACT: In the stock Market, the term “Whale” is when a individual or company is holding an obnoxious majority of the shares in a crypto or stock</p>
             <ul>
-            <form id="search-form">
-            <li class="text-1xl search"> <input id="myInput" type="search" name="s" placeholder="Stock Ticker🔎" class="round">
-            <button id="submit" data-selector="searchBtn"></button>
-            </li>
-            <form>
+                <form id="search-form">
+                    <li class="text-1xl search"> <input id="myInput" type="search" name="s" placeholder="Stock Ticker🔎" class="round">
+                        <button id="submit" data-selector="searchBtn"></button>
+                    </li>
+                <form>
             </ul>
         </nav>
     </header>
@@ -47,32 +47,29 @@
                     <h1 class="text-2xl mb-4"> Stock News</h1>
                     <div class="stockNews flex flex-col gap-6">
                     </div>
-                        </section>
+                </section>
                     <br />
                     <hr class="h-2 border-4" />
                     <br />
                     <div>
-                        <section
-                            class=""
-                            > 
+                        <section class=""> 
                             <div class="box-border h-8 w-80 border-4 text-center">
                                 <h2> <span class="stockName"> Stock Name </span> </h2>
-                            
-                        </div>
+                            </div>
                         </section>
                     </div>
                     <br />
-                    <div>
-                        <img class="box-border 
-                        h-60 
-                        w-85 
-                        border-4" 
-                        src=" " 
-                        alt="Stock Graph" 
-                        width="500" 
-                        height="600">
-                        <section>
-                            <div class =" h-50 w-64 p-4 border-4">
+                                
+                    <div class="columns">
+                        <div class="column is-one-quarter"></div>
+                        <div class="column is-one-quarter">
+                            <img
+                            src=" " 
+                            alt="Stock Graph" 
+                            width="500" 
+                            height="600">
+                        </div>
+                        <div class ="column is-one-quarter">
                             <h2 class="stockData"> Stock Data </h2> 
                             <p class="currentPrice">Current Price: </p>
                             <p class="change">Change: </p>
@@ -82,7 +79,6 @@
                             <p class="openPrice">Open Price: </p>
                             <p class="closedPrice">  Closed Price:</p>
                         </div>
-
                         </section>
                     </div>
             </div>
