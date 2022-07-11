@@ -4,17 +4,19 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Whale Watchers</title>
-        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Whale Watcherssss</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
         <link rel="stylesheet" href="assets/style.css" />
     </head>
     <body>
      <header>
-        <nav class="flex items-center justify-between flex-wrap  p-7" >
+        <nav class="columns" >
             <ul >
-            <li  a href="#"class ="text-2xl"><button onclick="myFunction()">🌙</button></li>
+            <li>
+                <button class="column button is-primary is-outlined is-large" onclick="myFunction()">🌙</button>
+            </li>
             </ul>
-            <div class="waviy">
+            <div class="column is-three-fifths waviy">
                 <span style="--i:1">W</span>
                 <span style="--i:2">H</span>
                 <span style="--i:3">A</span>
@@ -29,16 +31,17 @@
                 <span style="--i:12">E</span>
                 <span style="--i:13">R</span>
                 <span style="--i:14">S</span>
-               </div>
-            <p id="funFact" class="animate-charcter">FUN FACT: In the stock Market, the term “Whale” is when someone is holding an obnoxious/majority of the share/stake in a crypto or stock</p>
+            </div>
             <ul>
-            <form id="search-form">
-            <li class="text-1xl search"> <input id ="myInput" type="search" name="s" placeholder="Search..🔎" class="round">
-            <button id="submit" onclick="javascript:alert('YOOO!')"></button>
-            </li>
-            <form>
+                <form class="column" id="search-form">
+                    <li class="text-1xl search"> <input id ="myInput" type="search" name="s" placeholder="Search..🔎" class="round">
+                        <button id="submit" onclick="javascript:alert('YOOO!')"></button>
+                    </li>
+                <form>
             </ul>
         </nav>
+        <p id="funFact" class="animate-charcter" align="center">FUN FACT: In the stock Market, the term “Whale” is when someone is holding an obnoxious/majority of the share/stake in a crypto or stock</p>
+            
     </header>
         <main>
             <div align="center">
@@ -76,9 +79,9 @@
                         alt="Stock Graph" 
                         width="500" 
                         height="600">
-                        <section class="sDataAlign">
+                        <aside class="sDataAlign">
                             Stock Data
-                        </section>
+                        </aside>
                     </div>
             </div>
         </main>
