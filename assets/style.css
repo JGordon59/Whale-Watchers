@@ -1,3 +1,7 @@
+*  {
+  font-weight: bold;
+}
+
 
 header {
 border-bottom: 5px solid black;
@@ -21,7 +25,6 @@ padding-bottom: 50px;
     text-transform: uppercase;
     animation: waviy 1s infinite;
     animation-delay: calc(.1s * var(--i));
-    
   }
 
   @keyframes waviy {
@@ -35,7 +38,7 @@ padding-bottom: 50px;
 
 nav p {
     position: relative;
-    right: 150px;
+    right: 250px;
     top: 50px;
     font-weight: bold;
     
@@ -77,6 +80,7 @@ nav li {
     background-color: rgb(1, 12, 15);
     color: #3d82e1;
     
+    
 } 
 
 
@@ -109,6 +113,10 @@ text-shadow: black;
     color:blue;
 }
 
+.h-50 {
+  margin-bottom: 50px;
+}
+
 footer {
   border-top: black 5px solid;
   padding-top: 20px;
@@ -120,7 +128,7 @@ footer {
   justify-content: center;
   text-decoration: none;
   justify-content: space-around;
-  padding-bottom: 75px;
+  padding-bottom: 35px;
   padding-top: 10px;
   margin-top: 10px;
 }
