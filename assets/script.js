@@ -30,6 +30,7 @@ async function getStockNews(e) {
         newPTag.innerText = article.webTitle;
         newATag.appendChild(newPTag);
         stockNewsEl.appendChild(newATag);
+    
     });
     stockData(newsName);
 }
@@ -40,6 +41,7 @@ function stockData(ticker) {
         .then((response) => response.json())
         .then((data) => {
             console.log(data);
+            stockNameEl.innerText = ticker
             currentPriceEl.innerText = `Current Price: $${data.c}`;
             changeEl.innerText = `Change: ${data.d}`;
             percentChangeEl.innerText = `Percent Change: ${data.dp}%`;
