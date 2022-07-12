@@ -37,13 +37,17 @@ padding-top: 10px;
     }
   }
 
+  .display-none{
+    display: none;
+}
+
 nav p {
     text-align: center;
     font-weight: bold;
     padding-left: 25%;
 }
 
-.animate-charcter
+.animate-character
 {
    text-transform: uppercase;
   background-image: linear-gradient(
