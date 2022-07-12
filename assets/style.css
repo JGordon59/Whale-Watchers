@@ -12,10 +12,9 @@ padding-top: 10px;
 }
 
 .waviy {
-    position: relative;
-    left: 500px;
+    margin-left: 34%;
     -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
-    font-size: 30px;
+    font-size: 35px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
@@ -41,7 +40,7 @@ padding-top: 10px;
 nav p {
     text-align: center;
     font-weight: bold;
-    
+    padding-left: 25%;
 }
 
 .animate-charcter
@@ -111,8 +110,10 @@ text-shadow: black;
 
 #myInput {
     color:blue;
-    margin-left: 20%;
+    margin-left: 25%;
+    margin-top: 3%;
 }
+
 
 .h-50 {
   margin-bottom: 50px;
@@ -128,7 +129,7 @@ footer {
 
 footer p {
   text-align: center;
-  
+
 }
 .foot {
   display:flex;
@@ -141,4 +142,134 @@ footer p {
 }
 .foot :hover {
   color: white;
+}
+
+@media (max-width: 1545px) {
+  .waviy {
+   font-size: 200%;
+   margin-left: 33%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .waviy {
+   font-size: 140%;
+   margin-left: 33%;
+  }
+
+  nav p {
+    margin-bottom: 0%;
+    margin-right: 20%;
+  }
+
+  #myInput {
+    margin-left: 25%;
+    margin-top: 3%;
+  }
+
+}
+
+@media (max-width: 950px) {
+  .waviy {
+    font-size: 120%;
+  }
+}
+
+@media (max-width: 650px) {
+  .waviy {
+    font-size: 120%;
+    margin-left: 18%;
+  }
+}
+
+@media (max-width: 805px) {
+  .waviy {
+    font-size: 120%;
+    margin-left: 25%;
+  }
+
+  #myInput {
+    margin-left: 35%;
+  }
+
+  #submit {
+    margin-left: 10%;
+  }
+}
+
+@media (max-width: 490px) {
+  .waviy {
+    font-size: 85%;
+    margin-left: 15%;
+    margin-top: 4%;
+  }
+
+  nav p {
+    margin-right: 25%;
+  }
+
+  #myInput {
+    margin-left: 50%;
+  }
+
+  #submit {
+    margin-left: 28%;
+  }
+
+  #whalteBtn {
+    height: 10%;
+    width: 10%;
+  }
+}
+
+@media (max-width: 365px) {
+  .waviy {
+    font-size: 85%;
+    margin-left: 10%;
+    margin-top: 4%;
+  }
+
+  nav p {
+    margin-right: 25%;
+    margin-bottom: 0%;
+  }
+
+  #myInput {
+    margin-left: 35%;
+  }
+
+  #submit {
+    margin-left: 10%;
+  }
+
+  #whalteBtn {
+    height: 10%;
+    width: 10%;
+  }
+}
+
+@media (max-width: 335px) {
+  .waviy {
+    font-size: 60%;
+    margin-left: 12%;
+    margin-top: 4%;
+  }
+
+  nav p {
+    margin-right: 25%;
+    margin-bottom: 0%;
+  }
+
+  #myInput {
+    margin-left: 25%;
+  }
+
+  #submit {
+    margin-left: 3%;
+  }
+
+  #whalteBtn {
+    height: 10%;
+    width: 10%;
+  }
 }
