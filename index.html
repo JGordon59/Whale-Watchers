@@ -11,11 +11,11 @@
     
     <body>
     <header>
-        <nav class="">
-            <ul >
+        <nav class="columns">
+            <ul class="column is-narrow">
             <li><button class="button is-large is-ghost" onclick="myFunction()">🌙</button></li>
             </ul>
-            <div class="waviy">
+            <div class="columns is-narrow waviy">
                 <span style="--i:1">W</span>
                 <span style="--i:2">H</span>
                 <span style="--i:3">A</span>
@@ -30,15 +30,16 @@
                 <span style="--i:12">E</span>
                 <span style="--i:13">R</span>
                 <span style="--i:14">S</span>
+                <div align="center" class="column is-narrow"> <p id="funFact" class=" display-none">FUN FACT: In the stock Market, the term “Whale” is when a individual or company is holding an obnoxious majority of the shares in a crypto or stock</p>
+                </div>    
             </div>
-            <p id="funFact" class="animate-charcter">FUN FACT: In the stock Market, the term “Whale” is when a individual or company is holding an obnoxious majority of the shares in a crypto or stock</p>
-            <form id="search-form">
-                <li class="text-1xl search"> <input id="myInput" type="search" name="s" placeholder="Stock Ticker" class="round">
-                <button id="submit" class="button is-ghost" data-selector="searchBtn">🔎</button>
+            <form class="column is-narrow" id="search-form">
+                <li class="text-1xl search"> <input id="myInput" type="search" name="s" placeholder="Stock Ticker Search" class="round">
+                <button id="submit" class="button is-ghost is-medium" data-selector="searchBtn">🔎</button>
                 </li>
-                <form>
-            
+            </form>      
         </nav>
+        
     </header>
         <main>
             <div align="center">

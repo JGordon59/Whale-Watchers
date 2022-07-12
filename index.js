@@ -5,10 +5,12 @@ function myFunction() {
 }
     function whaleBtn() {
         const funFactEl = document.getElementById("funFact");
-        if (funFactEl.style.visibility === "hidden") {
-            funFactEl.style.visibility = "visible";
+        if (funFactEl.classList.contains("display-none")) {
+            funFactEl.classList.remove("display-none");
+            funFactEl.classList.add("animate-character");
         } else {
-            funFactEl.style.visibility = "hidden";
+            funFactEl.classList.remove("animate-character");
+            funFactEl.classList.add("display-none");
         }
     }
 
