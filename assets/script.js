@@ -48,6 +48,7 @@ function stockData(ticker) {
             dailyLowEl.innerText = `Daily Low: $${data.l}`;
             openPriceEl.innerText = `Open Price: $${data.o}`;
             closedPriceEl.innerText = `Closed Price: $${data.pc}`;
+            
         })
         .catch((err) => console.error(err));
 }
