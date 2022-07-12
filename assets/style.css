@@ -117,13 +117,14 @@ text-shadow: black;
 }
 
 footer {
+  flex-wrap: wrap;
   border-top: black 5px solid;
   padding-top: 20px;
   background-color: rgb(5, 111, 111);
   color: rgb(93, 227, 187);
 }
 .foot {
-  display:flex;
+  display: flex;
   justify-content: center;
   text-decoration: none;
   justify-content: space-around;
@@ -134,3 +135,13 @@ footer {
 .foot :hover {
   color: white;
 }
+@media(max-width: 600px){
+  .foot{
+      display:block ;
+      color:black ; 
+      padding:0px ;
+      margin: 0px;
+  } 
+}
+
+
