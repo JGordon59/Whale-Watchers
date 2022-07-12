@@ -82,7 +82,15 @@ nav li {
     
 } 
 
-
+.stockName{
+  text-decoration: underline;
+}
+h1{
+  text-decoration: underline;
+}
+.stockData{
+  text-decoration: underline;
+}
 
 .text-2xl :hover{
 text-shadow: black;
